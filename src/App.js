@@ -5,12 +5,11 @@ import About from './components/About';
 
 function App() {
   return(
-    <main>
+    <>
       <Nav/>
       <Header/>
-      <About/>
       {/*  */}
-    </main>
+    </>
   );
 }
 
