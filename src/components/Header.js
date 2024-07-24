@@ -4,7 +4,7 @@ import header_img from '../assets/images/restauranfood.jpg';
 
 const Header = () => {
     return (
-        <div className='header'>
+        <header className='header'>
             <div className='header-text'>
                 <h1 className='m-font'>Little Lemon</h1>
                 <h2 className='m-font'>Sri Lanka</h2>
@@ -14,7 +14,7 @@ const Header = () => {
                 </div>
             </div>
             <img src={header_img} alt="heade_img" className='header-img'/>
-        </div>
+        </header>
     );
 };
 

@@ -88,9 +88,7 @@ li{
   width: 200px;
 }
 
-.menu-icon{
-  display: none;
-}
+
 
 
 
@@ -116,55 +114,6 @@ li{
 .nav-links{
   flex-wrap: nowrap;
 }
-
-@media screen and (max-width : 768px) {
-
-  /* nav */
-  .menu-icon{
-    display: block;
-  }
-
-  .nav-links{
-    display: none;
-  }
-
-  .nav-links.visible{
-    display: flex;
-    white-space: nowrap;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 40px;
-    right: 0;
-    width: 100%;
-    background-color: #495e57;
-    transition: all 1s ease-in-out;
-    color: #edefee;
-  }
-
-  .nav-links.visible li a{
-    text-decoration: none;
-    color: #edefee;
-  }
-  .btn{
-    display: none;
-  }
-  .btn.visible{
-    display: flex;
-    color: #edefee;
-    background-color: transparent;
-    padding: 0;
-  }
-  ul{
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-
-  /* header */
-}
-
-/* header */
 
 .header{
   display: flex;
@@ -237,5 +186,110 @@ li{
   background-color: #edefee;
   color: #000;
 }
+
+.menu-icon{
+  display: none;
+}
+
+
+@media screen and (max-width : 768px) {
+
+  /* nav */
+  .menu-icon{
+    display: block;
+    margin-right: 30px;
+  }
+  .navbar{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
+
+  .header{
+  display: flex;
+  height: 80px;
+  background-color: #495e57;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: auto;
+  width: 100%;
+  }
+
+  .header-text{
+    width: 100%;
+  }
+  .header-text h1{
+    font-size: 60px;
+    color: #f4c314;
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+  .header-text p{
+    color: #edefee;
+    margin-bottom: 170px;
+    margin-top: -20px;
+    font-size: 18px;
+  }
+  .header-text h2{
+    color: #edefee;
+    margin-top: -50px;
+    font-size: 32px;
+  }
+  .header img {
+    position: absolute;
+    left: auto;
+    right: 20px;
+    
+    top: 250px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  
+
+  .nav-links{
+    display: none;
+  }
+
+  .nav-links.visible{
+    display: flex;
+    white-space: nowrap;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    background-color: #495e57;
+    transition: all 1s ease-in-out;
+    color: #edefee;
+  }
+
+  .nav-links.visible li a{
+    text-decoration: none;
+    color: #edefee;
+  }
+  .btn{
+    display: none;
+  }
+  .btn.visible{
+    display: flex;
+    color: #edefee;
+    background-color: transparent;
+    padding: 0;
+  }
+  ul{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  /* header */
+}
+
+/* header */
+
+
+
 
 
