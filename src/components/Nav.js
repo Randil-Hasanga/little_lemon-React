@@ -51,13 +51,7 @@ const Nav = () => {
         setMenuVisible(!menuVisible);
     }
     return (
-            <nav className='navbar' ref={navRef}
-            position="fixed"
-            top={0}
-            left={0}
-            bottom={0}
-            right={0}
-            transition="transform 0.3s ease-in-out">
+            <nav className='navbar' ref={navRef}>
                 <img src={logo} alt="logo" className='logo' />
                 <div>
                     <FontAwesomeIcon icon={faBars} className='menu-icon' onClick={toggleMenu} />
