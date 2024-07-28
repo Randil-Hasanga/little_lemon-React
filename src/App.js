@@ -13,6 +13,7 @@ function App() {
       <Header/>
       <SpecialMenu/>
       <Reviews/>
+      <About/>
     </main>
   );
 }
