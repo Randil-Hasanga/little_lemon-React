@@ -374,6 +374,7 @@ li{
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding: 70px 0px;
 }
 
 .about-text h1{
@@ -401,14 +402,55 @@ li{
 .about .image1 {
   position: absolute;
   right: 25%;
-  margin-top: 120px;
+  margin-top: 180px;
 }
 
 .about .image2 {
   position: absolute;
   right: 20%;
-  margin-top: -40px;
+  margin-top: 40px;
 }
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #495e57;
+  padding: 50px 20% 30px 20%;
+}
+.footer-img{
+  height: 200px;
+}
+
+.footer-list li, .contact-list li, .social-list li{
+  list-style: none;
+  font-size: 20px;
+  color: #edefee;
+  padding-top: 10px;
+}
+
+.footer-list h2, .contact-list h2, .social-list h2{
+  color: #f4c314;
+  margin-top: 0;
+}
+
+.footer-list, .contact-list, .social-list{
+  color: #edefee;
+  margin-top: 0;
+}
+
+.contact-list .icon{
+  padding-right: 10px;
+}
+
+.icon-list{
+  display: flex;
+  gap: 15px;
+}
+
+
+
 
 
 @media screen and (max-width : 768px) {
@@ -647,14 +689,12 @@ li{
 .about-text h1{
   font-size: 34pt;
   color: #495e57;
-  margin-top: 10px;
   white-space: nowrap;
   margin-bottom: 20px;
 }
 
 .about-text p{
   color: #495e57;
-  margin-bottom: 1em;
   margin-top: -20px;
   font-size: 20px;
   padding-top: 10px;
@@ -662,6 +702,26 @@ li{
 
 .about .image {
   display: none;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #495e57;
+  padding: 50px 5% 30px 5%;
+}
+
+.footer-list, .contact-list, .social-list{
+  color: #edefee;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer-img{
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 }

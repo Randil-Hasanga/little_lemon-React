@@ -5,6 +5,7 @@ import About from './components/About';
 import SpecialMenu from './components/SpecialMenu';
 import Reviews from './components/Reviews';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Footer from './components/Footer';
 
 function App() {
   return(
@@ -14,6 +15,7 @@ function App() {
       <SpecialMenu/>
       <Reviews/>
       <About/>
+      <Footer/>
     </main>
   );
 }
