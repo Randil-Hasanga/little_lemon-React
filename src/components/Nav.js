@@ -30,7 +30,6 @@ const Nav = () => {
     };
 
     const handleClick = (anchor) => (e) =>{
-        e.preventDefault();
         const element = document.getElementById(anchor);
         if(element){
             element.scrollIntoView({
@@ -57,10 +56,10 @@ const Nav = () => {
                     <FontAwesomeIcon icon={faBars} className='menu-icon' onClick={toggleMenu} />
                 </div>
                 <ul className= {`nav-links ${menuVisible ? 'visible' : ''}`}>
-                    <li className='nav-link list'>Home</li>
-                    <li className='nav-link list'><a className='nav-link' href="/about" onClick={handleClick("about")}>About</a></li>
+                    <li className='nav-link list'><Link to="/">Home</Link></li>
+                    <li className='nav-link list'><Link to="/" onClick={handleClick('about')}>About</Link></li>
                     <li className='nav-link list'>menu</li>
-                    <li className='nav-link list'>Reservations</li>
+                    <li className='nav-link list'><Link to="/reservations">Reservations</Link></li>
                     <li className='nav-link list'>Login</li>
                     <li className='nav-btn list'>
                         <div className={`btn ${menuVisible ? 'visible' : ''}`}>

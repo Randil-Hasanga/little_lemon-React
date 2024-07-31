@@ -4,7 +4,7 @@ import header_img from '../assets/images/restauranfood.jpg';
 
 const Header = () => {
     return (
-        <header className='header'>
+        <header className='header' id='header'>
             <div className='header-text'>
                 <h1 className='m-font'>Little Lemon</h1>
                 <h2 className='m-font'>Sri Lanka</h2>

@@ -449,6 +449,30 @@ li{
   gap: 15px;
 }
 
+/* Reservations */
+
+.reservations{
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 80px;
+}
+
+input{
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+}
+
+input[type=date]{
+  text-transform: uppercase;
+}
+
+.personal-details{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 
 
 
