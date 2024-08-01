@@ -20,10 +20,12 @@ const Nav = () => {
         if (currentScrollY > prevScrollY.current) {
             if (nav) {
                 nav.style.transform = "translateY(-100%)";
+                setMenuVisible(false);
             }
         } else {
             if (nav) {
                 nav.style.transform = "translateY(0%)";
+                setMenuVisible(false);
             }
         }
         prevScrollY.current = currentScrollY;

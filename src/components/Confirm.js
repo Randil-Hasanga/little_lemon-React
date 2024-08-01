@@ -6,7 +6,7 @@ import Lottie from 'lottie-react';
 const Confirm = () => {
     return (
         <section className='confirm'>
-            <h1 className='m-font'>Your reservation has been successfully placed. Thank you!</h1>
+            <h1 className='m-font'>Your reservation has been successfully placed.<br/>Thank you!</h1>
             <Lottie animationData={success} loop={false} className='animation'/>
         </section>
     );

@@ -25,7 +25,7 @@ const Reservations = () => {
                             <input type="text" placeholder='Special Request ?' maxLength="100"/>
                         </div>
                     </section>
-                    <button type="submit" className='btn res-btn'>Confirm Reservation</button>
+                    <button type="submit" className='btn res-btn k-font'>Confirm Reservation</button>
                 </form>
                 <div className='reservation-img'>
                     <img src={image} alt="image" className='res-img'/>

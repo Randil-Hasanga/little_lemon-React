@@ -477,13 +477,14 @@ input[type=date]{
 .res-img{
   width: 600px;
   margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .form{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 0;
+  padding: 30px 0;
 }
 
 .res-btn{
@@ -496,6 +497,8 @@ input[type=date]{
   color: #edefee;
   border: none;
   font-weight: 600;
+  font-size: 15px;
+  font-style: normal;
 }
 
 .res-btn:hover{
@@ -504,7 +507,10 @@ input[type=date]{
   background-color:  #f4c314;
   border-radius: 150px;
   color: #495e57;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+  font-style: normal;
+  
 }
 
 .form h1{
@@ -543,6 +549,7 @@ input[type=date]{
 
 
 
+
 @media screen and (max-width : 768px) {
 
   .main{
@@ -557,6 +564,7 @@ input[type=date]{
   }
   .navbar{
     position: fixed;
+    height: 80px;
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
@@ -617,9 +625,10 @@ input[type=date]{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 40px;
+    top: 80px;
     right: 0;
     width: 100%;
+    margin: 0;
     background-color: #495e57;
     transition: all 1s ease-in-out;
     color: #edefee;
@@ -839,7 +848,26 @@ input[type=date]{
   margin: 20px;
 }
 
+.res-btn{
+  display: flex;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-style: normal;
+}
 
+
+.confirm h1{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #495e57;
+}
+
+.animation{
+  margin-top: -10px;
+  padding: 0;
+}
 
 }
 
