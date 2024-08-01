@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import { Route, Router, Routes } from 'react-router-dom';
 import Main from './components/Main';
 import Reservations from './components/Reservations';
+import Confirm from './components/Confirm';
 
 function App() {
   return(
@@ -17,6 +18,7 @@ function App() {
       <Routes>
           <Route path='/' element={<Main/>}/>
           <Route path="/reservations" element={<Reservations/>} />
+          <Route path="/confirm" element={<Confirm/>} />
       </Routes>
       <Footer/>
     </main>
