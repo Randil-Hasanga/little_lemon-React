@@ -547,7 +547,23 @@ input[type=date]{
   padding: 0;
 }
 
+.footer-list li a{
+  text-decoration: none;
+  color: #edefee;
+}
 
+.header-btn{
+  text-decoration: none;
+  color: #000;
+}
+
+.icon-list li{
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-list li:hover{
+  transform: translateY(-20px);
+}
 
 
 @media screen and (max-width : 768px) {

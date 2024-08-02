@@ -60,7 +60,7 @@ const Nav = () => {
                 <ul className= {`nav-links ${menuVisible ? 'visible' : ''}`}>
                     <li className='nav-link list'><Link to="/">Home</Link></li>
                     <li className='nav-link list'><Link to="/" onClick={handleClick('about')}>About</Link></li>
-                    <li className='nav-link list'>menu</li>
+                    <li className='nav-link list'>Menu</li>
                     <li className='nav-link list'><Link to="/reservations">Reservations</Link></li>
                     <li className='nav-link list'>Login</li>
                     <li className='nav-btn list'>

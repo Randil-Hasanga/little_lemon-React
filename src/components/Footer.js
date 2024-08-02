@@ -3,8 +3,21 @@ import logo from '../assets/images/footer-logo.d09eb2af6c5a2225eedf.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarker, faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faXTwitter, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
+
+    const handleClick = (anchor) => (e) =>{
+        const element = document.getElementById(anchor);
+        if(element){
+            element.scrollIntoView({
+                behavior:'smooth',
+                block: 'start'
+            });
+        }
+    }
+
     return (
         <section className='footer'>
             <div className='logo'>
@@ -13,11 +26,11 @@ const Footer = () => {
             <div className='quick-links'>
                 <ul className='footer-list k-font'>
                     <h2>QUICK LINKS</h2>
-                    <li>Home</li>
-                    <li><a className='nav-link' href="/about">About</a></li>
-                    <li>menu</li>
-                    <li>Reservations</li>
-                    <li >Login</li>
+                    <li className='footer-links'><Link to="/">Home</Link></li>
+                    <li className='footer-links'><Link to="/" onClick={handleClick('about')}>About</Link></li>
+                    <li className='footer-links'>menu</li>
+                    <li className='footer-links'><Link to="/reservations">Reservations</Link></li>
+                    <li className='footer-links'>Login</li>
                 </ul>
             </div>
             <div className='contact'>
